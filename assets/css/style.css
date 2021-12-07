@@ -225,7 +225,7 @@ nav ul {
 .ec-features-container {
     background-color: #ebeeee;
     color: #1F2421;
-    padding: 5rem 2rem 4rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
 }
 
 .ec-features-horizontal-scroll-container {
@@ -375,7 +375,7 @@ nav ul {
     margin-bottom: 2rem;
     background-color: #ffffff;
     padding: 2rem;
-    border-radius: 0.6rem;
+    border-radius: 0.5rem;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -413,6 +413,34 @@ nav ul {
 }
 .success-stories-button:active{
 
+}
+
+.coding-exercise-wrapper {
+    background-color: #011528;
+    color: #ebeeee;
+    padding: 4rem 2rem 4rem 2rem;
+}
+
+.coding-exercise-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coding-exercise-description {
+    margin-right: 2rem;
+}
+
+.coding-exercise-environment {
+    max-width: 55rem;
+    height: 45rem;
+    flex-grow: 2;
+}
+
+.coding-exercise-description-example {
+    background-color: #1a333f;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 1060px) {
