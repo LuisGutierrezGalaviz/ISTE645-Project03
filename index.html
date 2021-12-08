@@ -247,6 +247,47 @@
                     </div>
                 </div>
             </div>
+
+            <div class="coding-exercise-wrapper">
+                <h1 style="margin-bottom:1.5rem;" class="center-text">Example Solution Overview</h1>
+                <p style="margin-bottom: 4rem; margin-left: auto; margin-right: auto; font-size: 1.15rem;" class="center-text">
+                    Our detailed code walkthrough videos set us apart from competing products. We have designed them to mimick 
+                    an ideal answer for a coding interview, consisting of discussing a brute force approach followed by an optimized approach.
+                </p>
+                <div class="coding-solution-container">
+                    <div style="margin-right: 2rem;">
+                        <h2 style="margin-top: 0rem; margin-bottom: 1rem;">Brute Force Approach - Reverse and Compare</h2>
+                        <div class="coding-solution-description">
+                            <p>
+                                <strong>Summary: </strong>To check if a string is a palindrome or not we can reverse the string and compare it with the original string.
+                                If the reversed string is equal to the original string then it is a palindrome. 
+                            </p>
+                            <p style="margin-top: 1rem;">
+                                <strong>Time Complexity: </strong> O(n), where n is the length of the given string. However, it requires multiple full traversals of the string 
+                                since splitting the string into an array takes O(n), reversing the array also takes O(n) time, and joining the array also takes O(n) time.
+                                In total all these operations take O(n) + O(n) + O(n).
+                            </p>
+                        </div>
+                    </div>
+                    <iframe width="520" height="320" src="https://www.youtube.com/embed/3RQ5ADUKHsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="margin-top: 3rem;" class="coding-solution-container">
+                    <div style="margin-right: 2rem;">
+                        <h2 style="margin-top: 0rem; margin-bottom: 1rem;">Optimized Approach - Two Pointers</h2>
+                        <div class="coding-solution-description">
+                            <p>
+                                <strong>Summary: </strong>We can use two pointers to achieve this in one traversal through the characters in the string avoiding any extra memory.
+                                Create two pointers, one at the start and one at the end of the string, then move the start and end pointers towards the middle index. 
+                                If the next set of characters are equal the string is still a valid palindrome.
+                            </p>
+                            <p style="margin-top: 1rem;">
+                                <strong>Time Complexity: </strong> O(n), where n is the length of the given string. However, this solution only does one traversal through the string.
+                            </p>
+                        </div>
+                    </div>
+                    <iframe width="520" height="320" src="https://www.youtube.com/embed/0CKUjDcUYYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </main>
     </body>
 </html>
