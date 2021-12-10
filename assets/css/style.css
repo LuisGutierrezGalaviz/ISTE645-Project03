@@ -142,6 +142,11 @@ nav ul {
     flex-direction: row;
 }
 
+.flex-row-banner {
+    display: flex;
+    flex-direction: row;
+}
+
 .flex-col-center {
     height: 3.5rem;
     display: flex;
@@ -521,11 +526,57 @@ form {
     h1 {
         font-size: 2.25rem;
     }
+
+    .coding-exercise-flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .coding-exercise-description {
+        min-width: 95%;
+        margin-bottom: 3rem;
+    }
+
+    .coding-exercise-environment {
+        min-width: 95%;
+    }
+
+    .coding-solution-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .coding-solution-description {
+        min-width: 95%;
+        margin-bottom: 1rem;
+    }
+
+    .coding-solution-description p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .coding-solution-container iframe {
+        align-self: center;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 2.25rem;
+    }
+
+    .flex-row-banner {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-description-container {
+        margin: 0rem;
+    }
+
+    .sandbox-pic-container {
+        display: none;
     }
 
     .registration-container {
@@ -554,8 +605,22 @@ form {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
+    .ec-logo {
+        width: 2.15rem;
+        height: 2.5rem;
+    }
+
+    .flex-col-center {
+        height: 2.5rem;
+    }
+
+    .nav-flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .form-control {
-        width: 18rem;
+        width: 20rem;
     }
 }
