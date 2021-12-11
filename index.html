@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ExpertCoder</title> 
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="top-banner">
@@ -294,7 +294,7 @@
                 <p style="margin-left: auto; margin-right: auto; font-size: 1.15rem; margin-bottom: 3rem;" class="center-text">
                     Register now to become an ExpertCoder.
                 </p>
-                <form action="#" method="post">
+                <form id="registrationForm" name="registrationForm" onsubmit="validateRegistrationForm()">
                     <div class="registration-flex-row">
                         <div class="registration-column">
                             <label for="fname">First Name</label>
@@ -326,6 +326,7 @@
                         <input type="submit" value="Register" class="registration-submit-button">
                     </div>
                 </form>
+                <p style="margin-left: auto; margin-right: auto; font-size: 1.15rem; margin-top: 2rem;" class="center-text" id="registrationValidationOutput"></p>
             </div>
         </main>
     </body>

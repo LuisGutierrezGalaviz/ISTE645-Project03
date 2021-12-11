@@ -59,3 +59,35 @@ function get_previous_user(){
     }, 500)
 }
 
+
+/*var form = document.getElementById("registrationForm");
+form.addEventListener('submit', handleForm);
+function handleForm(event) {
+    event.preventDefault();
+} */
+document.getElementById("registrationForm").addEventListener('submit', function(event){event.preventDefault();});
+
+function validateRegistrationForm() {
+    let validationOutputString = "";
+
+    let fname = document.forms["registrationForm"]["fname"].value;
+    let lname = document.forms["registrationForm"]["lname"].value;
+    let email = document.forms["registrationForm"]["email"].value;
+    let password = document.forms["registrationForm"]["password"].value;
+    let repassword = document.forms["registrationForm"]["repassword"].value;
+
+    if(fname == ""){
+        validationOutputString += "First Name cannot be empty. "
+    }
+    if(lname == ""){
+        validationOutputString += "Last Name cannot be empty. "
+    }
+    if(password != repassword){
+        validationOutputString += "Passwords don't match. "
+    }
+    if(!String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+        validationOutputString += "Enter a valid email. "
+    }
+
+    document.getElementById("registrationValidationOutput").innerHTML = validationOutputString;
+}
