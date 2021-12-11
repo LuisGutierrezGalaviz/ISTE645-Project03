@@ -42,7 +42,7 @@ p, li {
 }
 
 li {
-    margin: 0.5rem 1rem .75rem 1rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 header {
@@ -123,6 +123,10 @@ nav ul {
 
 .center-text {
     text-align: center;
+}
+
+.margin-bottom-small {
+    margin-bottom: 1.5rem;
 }
 
 .top-banner {
@@ -231,6 +235,12 @@ nav ul {
     background-color: #ebeeee;
     color: #1F2421;
     padding: 5rem 2rem 2rem 2rem;
+}
+
+.ec-features-description {
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1.15rem;
 }
 
 .ec-features-horizontal-scroll-container {
@@ -454,6 +464,13 @@ nav ul {
     justify-content: space-around;
 }
 
+.coding-solution-overview {
+    margin-bottom: 4rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1.15rem;
+}
+
 .coding-solution-description {
     max-width: 35rem;
     height: auto;
@@ -466,6 +483,13 @@ nav ul {
     background-color: #ebeeee;
     color: #1F2421;
     padding: 4rem 2rem 4rem 2rem;
+}
+
+.registration-description {
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1.15rem; 
+    margin-bottom: 3rem;
 }
 
 .registration-flex-row {
@@ -524,6 +548,32 @@ form {
 
 #registrationValidationOutput {
     color: #FF0000;
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1.15rem; 
+    margin-top: 2rem;
+}
+
+.resources-container {
+    background-color: #ebeeee;
+    color: #1F2421;
+    padding: 4rem 2rem 4rem 2rem;
+}
+
+.resources-ordered-list {
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1.15rem; 
+    max-width: 50rem;
+}
+
+ol ul {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+ol li{
+    max-width: 50rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -562,6 +612,8 @@ form {
 
     .coding-solution-container iframe {
         align-self: center;
+        width: 420px;
+        height: 260px;
     }
 }
 
@@ -581,6 +633,12 @@ form {
 
     .sandbox-pic-container {
         display: none;
+    }
+
+    .coding-solution-container iframe {
+        align-self: center;
+        width: 340px;
+        height: 210px;
     }
 
     .registration-container {

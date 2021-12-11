@@ -48,8 +48,8 @@
         </div>
         <main>
             <div class="ec-features-container">
-                <h1 style="margin-bottom:1.5rem;" class="center-text">What is ExpertCoder?</h1>
-                <p style="margin-left: auto; margin-right: auto; font-size: 1.15rem;" class="center-text">
+                <h1 class="center-text margin-bottom-small">What is ExpertCoder?</h1>
+                <p class="center-text ec-features-description">
                     Coding interviews have kept talented engineers from landing amazing jobs. Our product will ensure 
                     you are ready to ace your interviews by putting you through a streamlined review process with the following features.
                 </p>
@@ -249,8 +249,8 @@
             </div>
 
             <div class="coding-exercise-wrapper">
-                <h1 style="margin-bottom:1.5rem;" class="center-text">Example Solution Overview</h1>
-                <p style="margin-bottom: 4rem; margin-left: auto; margin-right: auto; font-size: 1.15rem;" class="center-text">
+                <h1 class="center-text margin-bottom-small">Example Solution Overview</h1>
+                <p class="center-text coding-solution-overview">
                     Our detailed code walkthrough videos set us apart from competing products. We have designed them to mimick 
                     an ideal answer for a coding interview, consisting of discussing a brute force approach followed by an optimized approach.
                 </p>
@@ -263,9 +263,8 @@
                                 If the reversed string is equal to the original string then it is a palindrome. 
                             </p>
                             <p style="margin-top: 1rem;">
-                                <strong>Time Complexity: </strong> O(n), where n is the length of the given string. However, it requires multiple full traversals of the string 
-                                since splitting the string into an array takes O(n), reversing the array also takes O(n) time, and joining the array also takes O(n) time.
-                                In total all these operations take O(n) + O(n) + O(n).
+                                <strong>Time Complexity: </strong> O(n), where n is the length of the given string. However, it requires multiple full traversals of the string.
+                                In total all the operations required take O(n) + O(n) + O(n).
                             </p>
                         </div>
                     </div>
@@ -276,9 +275,9 @@
                         <h2 style="margin-top: 0rem; margin-bottom: 1rem;">Optimized Approach - Two Pointers</h2>
                         <div class="coding-solution-description">
                             <p>
-                                <strong>Summary: </strong>We can use two pointers to achieve this in one traversal through the characters in the string avoiding any extra memory.
+                                <strong>Summary: </strong>We can solve this problem using two pointers and no additional memory.
                                 Create two pointers, one at the start and one at the end of the string, then move the start and end pointers towards the middle index. 
-                                If the next set of characters are equal the string is still a valid palindrome.
+                                If at every iteration, the characters pointed to by the pointers are equal then the string is still a valid palindrome.
                             </p>
                             <p style="margin-top: 1rem;">
                                 <strong>Time Complexity: </strong> O(n), where n is the length of the given string. However, this solution only does one traversal through the string.
@@ -290,8 +289,8 @@
             </div>
 
             <div class="registration-container">
-                <h1 style="margin-bottom:1.5rem;" class="center-text">Register</h1>
-                <p style="margin-left: auto; margin-right: auto; font-size: 1.15rem; margin-bottom: 3rem;" class="center-text">
+                <h1 class="center-text margin-bottom-small">Register</h1>
+                <p class="center-text registration-description">
                     Register now to become an ExpertCoder.
                 </p>
                 <form id="registrationForm" name="registrationForm" onsubmit="validateRegistrationForm()">
@@ -314,11 +313,11 @@
                     <div class="registration-flex-row">
                         <div class="registration-column">
                             <label for="password">Password</label>
-                            <input type="text" class="form-control" placeholder="Your Password" id="password">
+                            <input type="password" class="form-control" placeholder="Your Password" id="password">
                         </div>
                         <div class="registration-column">
                             <label for="repassword">Re-type Password</label>
-                            <input type="text" class="form-control" placeholder="Your Password" id="repassword">
+                            <input type="password" class="form-control" placeholder="Your Password" id="repassword">
                         </div>
                     </div>
 
@@ -326,7 +325,36 @@
                         <input type="submit" value="Register" class="registration-submit-button">
                     </div>
                 </form>
-                <p style="margin-left: auto; margin-right: auto; font-size: 1.15rem; margin-top: 2rem;" class="center-text" id="registrationValidationOutput"></p>
+                <p class="center-text" id="registrationValidationOutput"></p>
+            </div>
+
+            <div class="resources-container">
+                <h1 class="center-text margin-bottom-small">Resources (APA 7 Format)</h1>
+                <ol class="resources-ordered-list">
+                    <li>AlgoExpert LLC. (2021). AlgoExpert. AlgoExpert | Ace the Coding Interviews. https://www.algoexpert.io/product</li>
+                    <ul><li>Inspiration for website design</li></ul>
+
+                    <li>Cake Labs. (2021). Interview Cake. Interview Cake: Programming Interview Questions and Tips. https://www.interviewcake.com/</li>
+                    <ul><li>Inspiration for website design</li></ul>
+
+                    <li>Fonticons. (2021). Font awesome Icons. Font Awesome. https://fontawesome.com/v5.15/icons?d=gallery&p=2</li>
+                    <ul><li>Downloaded free icons from this source</li></ul>
+
+                    <li>The Net Ninja. (2016, April 12). CSS Animation Tutorial #1 - Introduction. YouTube. https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5</li>
+                    <ul><li>Reviewed css animations from class and learned keyframes for repeating animations using this playlist from “The Net Ninja” on youtube</li></ul>
+
+                    <li>Valid Palindrome. (2014). LeetCode - The World's Leading Online Programming Learning Platform. https://leetcode.com/problems/valid-palindrome/</li>
+                    <ul><li>Used this problem to inspire the example coding problem I provided</li></ul>
+
+                    <li>Ali, T. (2021, October 11). Valid palindrome Leetcode solution. TutorialCup. https://www.tutorialcup.com/leetcode-solutions/valid-palindrome-leetcode-solution.htm</li>
+                    <ul><li>Used the solutions in this website in the example coding problem I provided</li></ul>
+
+                    <li>Kevin Naughton Jr. (2018, October 17). FACEBOOK - VALID PALINDROME (LeetCode). YouTube. https://www.youtube.com/watch?v=3RQ5ADUKHsY</li>
+                    <ul><li>1st video used for example coding problem solution section</li></ul>
+
+                    <li>Errichto. (2020, January 11). Leetcode problem Longest Palindromic Substring (two solutions). YouTube. https://www.youtube.com/watch?v=0CKUjDcUYYA</li>
+                    <ul><li>2nd video used for example coding problem solution section</li></ul>
+                </ol>
             </div>
         </main>
     </body>
