@@ -417,17 +417,8 @@ nav ul {
     user-select: none;
 }
 
-.success-stories-button:link {
-
-}
-.success-stories-button:visited{
-
-}
 .success-stories-button:hover{
     cursor: pointer;
-}
-.success-stories-button:active{
-
 }
 
 .coding-exercise-wrapper {
@@ -450,6 +441,11 @@ nav ul {
     max-width: 55rem;
     height: 45rem;
     flex-grow: 2;
+}
+
+.coding-exercise-environment iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .coding-exercise-description-example {
@@ -567,13 +563,9 @@ form {
     max-width: 50rem;
 }
 
-ol ul {
-    margin-left: 3rem;
-    margin-bottom: 2rem;
-}
-
 ol li{
     max-width: 50rem;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
